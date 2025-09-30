@@ -1,0 +1,17 @@
+name = "branch-ai-do"
+main = "src/branch.ts"
+compatibility_date = "2025-09-29"
+
+# This gives the Worker access to the AI service
+[ai]
+binding = "AI"
+
+# This gives the Worker access to its own DO
+[[durable_objects.bindings]]
+name = "CONVERSATION_BRANCH"
+class_name = "ConversationBranch"
+
+# This defines the DO class for the platform
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["ConversationBranch"]

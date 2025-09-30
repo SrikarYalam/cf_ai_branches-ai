@@ -1,0 +1,12 @@
+# In branch-ai/wrangler.toml
+name = "branch-ai"
+compatibility_date = "2025-09-29"
+pages_build_output_dir = ".svelte-kit/cloudflare"
+
+[ai]
+binding = "AI"
+
+[[durable_objects.bindings]]
+name = "CONVERSATION_BRANCH"
+class_name = "ConversationBranch"
+script_name = "branch-ai-do"
