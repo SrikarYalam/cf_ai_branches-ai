@@ -7,9 +7,6 @@ A full-stack AI chat application built on the Cloudflare stack, featuring the ab
 ---
 
 ## Features
-
-This project fulfills the assignment requirements by implementing:
-
 * **LLM Integration**: Connects to the Llama 3 model via **Cloudflare Workers AI**.
 * **Stateful Workflow**: Uses **Cloudflare Durable Objects** to maintain a persistent, independent state for each conversation branch.
 * **Real-time User Input**: A responsive chat interface built with **SvelteKit** that communicates with the backend via WebSockets.
@@ -20,7 +17,7 @@ This project fulfills the assignment requirements by implementing:
 
 ## Architecture
 
-This application uses a two-project "microservice" architecture, which is a standard pattern for using stateful Durable Objects with a Cloudflare Pages frontend.
+This application uses a two-project "microservice" architecture for using stateful Durable Objects with a Cloudflare Pages frontend.
 
 * **`branch-ai-do` (Backend)**
     * A dedicated Cloudflare Worker whose sole purpose is to provide the `ConversationBranch` Durable Object class.
