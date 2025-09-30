@@ -2,7 +2,7 @@
 
 A full-stack AI chat application built on the Cloudflare stack, featuring the ability to branch conversations and explore different lines of inquiry.
 
-**Live Demo:** **[https://branch-ai.pages.dev](https://branch-ai.pages.dev)**
+**Live Demo:** **[https://main.branch-ai.pages.dev/](https://main.branch-ai.pages.dev/)**
 
 ---
 
